@@ -36,8 +36,7 @@ test = {
         {
           'code': r"""
           >>> # leavers should have as many rows as there cut15 values of 2.
-          >>> len(leavers) == np.count_nonzero(good_brexit['cut15'] == 2)
-          True
+          >>> assert len(leavers) == np.count_nonzero(good_brexit['cut15'] == 2)
           """,
           'hidden': False,
           'locked': False
@@ -45,8 +44,7 @@ test = {
         {
           'code': r"""
           >>> # leavers 'cut15' should all be equal to 2.
-          >>> np.all(leavers['cut15'] == 2)
-          True
+          >>> assert np.all(leavers['cut15'] == 2)
           """,
           'hidden': False,
           'locked': False

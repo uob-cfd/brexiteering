@@ -36,10 +36,9 @@ test = {
         {
           'code': r"""
           >>> # simulated_proportions values should be proportions
-          >>> np.all(np.logical_and(
+          >>> assert np.all(np.logical_and(
           ...     simulated_proportions >= 0,
           ...     simulated_proportions <= 1))
-          True
           """,
           'hidden': False,
           'locked': False
@@ -49,10 +48,9 @@ test = {
           # samps = np.random.binomial
           'code': r"""
           >>> # simulated_proportions values should be between 0.44 and 0.6
-          >>> np.all(np.logical_and(
+          >>> assert np.all(np.logical_and(
           ...     simulated_proportions >= 0.44,
           ...     simulated_proportions <= 0.6))
-          True
           """,
           'hidden': False,
           'locked': False

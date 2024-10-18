@@ -45,8 +45,7 @@ test = {
         {
           'code': r"""
           >>> # There should be 14 False values.  Did you use != ?
-          >>> np.count_nonzero(age_not_0 == False) == 14
-          True
+          >>> assert np.count_nonzero(age_not_0 == False) == 14
           """,
           'hidden': False,
           'locked': False

@@ -45,8 +45,7 @@ test = {
         {
           'code': r"""
           >>> # is_remain should have True where the vote was equal to 1.
-          >>> np.all(is_remain == (good_brexit['cut15'] == 1))
-          True
+          >>> assert np.all(is_remain == (good_brexit['cut15'] == 1))
           """,
           'hidden': False,
           'locked': False

@@ -36,8 +36,7 @@ test = {
         {
           'code': r"""
           >>> # votes should have the values from cut15 good_brexit column.
-          >>> np.all(votes == good_brexit['cut15'])
-          True
+          >>> assert np.all(votes == good_brexit['cut15'])
           """,
           'hidden': False,
           'locked': False

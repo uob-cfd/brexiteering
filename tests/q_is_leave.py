@@ -27,8 +27,7 @@ test = {
         {
           'code': r"""
           >>> # is_leave should be a Boolean series.
-          >>> type(is_leave) == pd.Series
-          True
+          >>> assert type(is_leave) == pd.Series
           """,
           'hidden': False,
           'locked': False
@@ -45,8 +44,7 @@ test = {
         {
           'code': r"""
           >>> # is_leave should have True where the vote was equal to 2.
-          >>> np.all(is_leave == (good_brexit['cut15'] == 2))
-          True
+          >>> assert np.all(is_leave == (good_brexit['cut15'] == 2))
           """,
           'hidden': False,
           'locked': False
